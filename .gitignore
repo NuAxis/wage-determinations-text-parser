@@ -1,0 +1,7 @@
+# Ignore dependencies
+node_modules/
+
+# Code Coverage
+coverage/
+
+.DS_Store
