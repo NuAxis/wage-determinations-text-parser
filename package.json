@@ -23,13 +23,12 @@
     "url": "https://github.com/NuAxis/wage-determinations-text-parser/issues"
   },
   "homepage": "https://github.com/NuAxis/wage-determinations-text-parser#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "3.12.2",
     "eslint-config-google": "0.7.1",
-    "chai": "^3.5.0",
     "istanbul": "^1.1.0-alpha.1",
-    "mocha": "^2.4.5"
+    "mocha": "^3.0.0"
   }
 }
