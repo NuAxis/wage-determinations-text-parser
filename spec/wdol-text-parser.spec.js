@@ -8,7 +8,7 @@
 
 describe('WDOL Text Parser module', function() {
   before(function() {
-     parser = new WdolTextParser('./lib/content/wage-determination.text');
+     parser = new WdolTextParser('./spec/fixture/wage-determination.text');
   });
 
   it('should parser headre information', function(done) {
