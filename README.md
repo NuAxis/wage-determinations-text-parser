@@ -16,38 +16,39 @@ Environment variables
 ```
 
 # Test
-
+```
     npm test
 ```
-# Wage Determination JSON Object Format
-``` json
+
+# WD JSON Object Structure
+```
 
 {
-	"headerInformation": {
-		"wageDeterminationCode": "Define effective date of wagedetermination and its code",
-		"counties": "Defines in which counties that wagedetermination is implied",
-		"constructionTypes": "Defines construction types in which wagedetermination is implied ",
-		"state":" Defines the name of state in which wagedetermination is applicable "
+	"headerInformation": {  --> contains metadata of wage determination
+		"wageDeterminationCode": --> Define effective date of wage determination and its code,
+		"counties": --> Defines in which counties that wage determination is implied,
+		"constructionTypes": --> Defines construction types in which wage determination is implied,
+		"state": --> Defines the name of state in which wage determination is applicable
 	},
-	"modifications": [
+	"modifications": [ --> contains list of modifications of wage determination
 		"12/23/2016"
 	],
-	"wageGroups": [
+	"wageGroups": [ -->  contains list of wage groups
 		{
-			"wageGroupCode":" Defines code and effective date of wage group",
+			"wageGroupCode":  -->  Defines code and effective date of wage group,
 			"occupations" [
 				{
 					"title": "Defines title of the occupation ",
-					"rates": [
+					"rates": [ // contains list of sub occupations of occupation
 						{
-							"title": " // title of the sub occuapation",
-							"rate": "// rate of the sub occuapation",
-							"fringe": " // fringe of the sub occuapation",
-							"isGroup" "// defines if occupation contain more, occupations"
+							"title": " -->  title of the sub occupation",
+							"rate": "-->  rate of the sub occupation",
+							"fringe": " -->  fringe of the sub occupation",
+							"isGroup" "-->  defines if occupation contain more, occupations"
 						}
 
 					],
-					"isGroup": "defines if occupation contains list of sub occupation rates "
+					"isGroup": --> Defines if occupation contains list of sub occupation rates
 				},
         {
           "title": "Bulldozer",
