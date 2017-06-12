@@ -19,6 +19,42 @@ var parser = require('wdol-text-parser');
     npm test
 
 # Wage Determination JSON Object Format
+```json
+
+{
+	"headerInformation": {
+		"wageDeterminationCode": // define effiective date of wagedetermination and its code,
+		"counties": // defines in which counties that wagedetermination is implied,
+		"constructionTypes": // defines construction types in which wagedetermination is implied,
+		"state": defines the name of state in which wagedetermination is applicable
+	},
+	"modifications": [ // defines list of modications of wagedetermination
+		"12/23/2016"
+	],
+	"wageGroups": [ /* List of Wage Groups */
+		{
+			"wageGroupCode": "", // defines code and effective date of wage group
+			"occupations": [ list of occuaptions in wagegroup
+				{
+					"title": "", // title of the occupation
+					"rates": [ // may contains list of subrates of specific occupation
+						{
+							"title": "", // title of the sub occuapation
+							"rate": "",     // rate of the sub occuapation
+							"fringe": "",   // fringe of the sub occuapation
+							"isGroup": // defines if occupation contain more occupations
+						},
+            .........
+					],
+					"isGroup": true // defines if occupation contains list of sub occupation rates
+				}
+			]
+		},
+    ..........
+	]
+}
+
+# Example:  
 {
 	"headerInformation": {
 		"wageDeterminationCode": "VA160003 12/23/2016",
@@ -141,3 +177,5 @@ var parser = require('wdol-text-parser');
 		}
 	]
 }
+
+```
