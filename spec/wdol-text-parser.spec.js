@@ -12,14 +12,15 @@ describe('WDOL Text Parser module', function() {
   });
 
   it('should get wage determination object', function(done) {
-     parser.getWageDetermination('./spec/fixture/wage-determination.text', function(error, wageDetermination) {
-       expect(error).to.be.undefined;
-       expect(wageDetermination).to.be.defined;
-       expect(wageDetermination).to.have.property('headerInformation');
-       expect(wageDetermination).to.have.property('modifications');
-       expect(wageDetermination).to.have.property('wageGroups');
-       done();
-     });
+    parser.getWageDetermination('./spec/fixture/wd-format/wage-determination4.text', function(error, wageDetermination) {
+      expect(error).to.be.undefined;
+      expect(wageDetermination).to.be.defined;
+      expect(wageDetermination).to.have.property('headerInformation');
+      expect(wageDetermination).to.have.property('modifications');
+      expect(wageDetermination).to.have.property('wageGroups');
+      console.log(JSON.stringify(wageDetermination));
+      done();
+    });
    });
 
    it('should throw error when given wrong filePath', function(done) {
