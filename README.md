@@ -10,51 +10,58 @@ var parser = require('wdol-text-parser');
 ```
 
 # Configuration
-```Environment variables
+```
+Environment variables
 
 ```
 
 # Test
 
     npm test
-
+```
 # Wage Determination JSON Object Format
-```json
+``` json
 
 {
 	"headerInformation": {
-		"wageDeterminationCode": // define effiective date of wagedetermination and its code,
-		"counties": // defines in which counties that wagedetermination is implied,
-		"constructionTypes": // defines construction types in which wagedetermination is implied,
-		"state": defines the name of state in which wagedetermination is applicable
+		"wageDeterminationCode": "Define effective date of wagedetermination and its code",
+		"counties": "Defines in which counties that wagedetermination is implied",
+		"constructionTypes": "Defines construction types in which wagedetermination is implied ",
+		"state":" Defines the name of state in which wagedetermination is applicable "
 	},
-	"modifications": [ // defines list of modications of wagedetermination
+	"modifications": [
 		"12/23/2016"
 	],
-	"wageGroups": [ /* List of Wage Groups */
+	"wageGroups": [
 		{
-			"wageGroupCode": "", // defines code and effective date of wage group
-			"occupations": [ list of occuaptions in wagegroup
+			"wageGroupCode":" Defines code and effective date of wage group",
+			"occupations" [
 				{
-					"title": "", // title of the occupation
-					"rates": [ // may contains list of subrates of specific occupation
+					"title": "Defines title of the occupation ",
+					"rates": [
 						{
-							"title": "", // title of the sub occuapation
-							"rate": "",     // rate of the sub occuapation
-							"fringe": "",   // fringe of the sub occuapation
-							"isGroup": // defines if occupation contain more occupations
-						},
-            .........
+							"title": " // title of the sub occuapation",
+							"rate": "// rate of the sub occuapation",
+							"fringe": " // fringe of the sub occuapation",
+							"isGroup" "// defines if occupation contain more, occupations"
+						}
+
 					],
-					"isGroup": true // defines if occupation contains list of sub occupation rates
-				}
+					"isGroup": "defines if occupation contains list of sub occupation rates "
+				},
+        {
+          "title": "Bulldozer",
+          "rate": "27.73",
+          "fringe": "14.29",
+          "isGroup": false
+        }
 			]
-		},
-    ..........
+		}
 	]
 }
-
+```
 # Example:  
+``` json
 {
 	"headerInformation": {
 		"wageDeterminationCode": "VA160003 12/23/2016",
