@@ -8,24 +8,24 @@
 
 describe('WDOL Text Parser module', function() {
   before(function() {
-     parser = new WdolTextParser('./spec/fixture/wage-determination.text');
+     parser = new WdolTextParser();
   });
 
-  it('should parser headre information', function(done) {
-       let result = parser.getHeaderInformation();
-       expect(result).to.be.a('object');
+  it('should get wage determination object', function(done) {
+     parser.getWageDetermination('./spec/fixture/wage-determination.text', function(error, wageDetermination) {
+       expect(error).to.be.undefined;
+       expect(wageDetermination).to.be.defined;
+       expect(wageDetermination).to.have.property('headerInformation');
+       expect(wageDetermination).to.have.property('modifications');
+       expect(wageDetermination).to.have.property('wageGroups');
        done();
-  });
+     });
+   });
 
-  it('should parse Modifcation Section', function(done) {
-       let result = parser.getModifications();
-       expect(result).to.be.a('array');
-       done();
-  });
-
-  it('should parse Wage Groups', function(done) {
-       let result = parser.getWageGroups();
-       expect(result).to.be.a('array');
-       done();
-  });
+   it('should throw error when given wrong filePath', function(done) {
+      parser.getWageDetermination('./spec/fixture/wage-determination.textd', function(error, wageDetermination) {
+        expect(error).to.be.defined;
+        done();
+      });
+    });
 });
