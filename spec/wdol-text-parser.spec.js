@@ -19,7 +19,6 @@ describe('WDOL Text Parser module', function() {
       expect(wageDetermination).to.have.property('headerInformation');
       expect(wageDetermination).to.have.property('modifications');
       expect(wageDetermination).to.have.property('wageGroups');
-      console.log(JSON.stringify(wageDetermination));
       done();
     });
    });
