@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./lib/wdolTextParser');
+module.exports = require('./lib/wdol-text-parser');
