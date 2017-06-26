@@ -51,6 +51,18 @@ describe('WDOL Text Parser module', function() {
      });
     });
 
+    it('should get wage determination object from file content which may contains fringe', function(done) {
+      let fileContent = fs.readFileSync('./spec/fixture/wd-format/wage-determination7.text', 'UTF-8');
+      parser.parseWageDeterminationText(fileContent, function(error, wageDetermination) {
+        expect(error).to.be.undefined;
+        expect(wageDetermination).to.be.defined;
+        expect(wageDetermination).to.have.property('headerInformation');
+        expect(wageDetermination).to.have.property('modifications');
+        expect(wageDetermination).to.have.property('wageGroups');
+        done();
+      });
+     });
+
     it('should throw error on providing non-text format', function(done) {
       parser.parseWageDeterminationText(12345678, function(error, wageDetermination) {
         expect(error).to.be.defined;
