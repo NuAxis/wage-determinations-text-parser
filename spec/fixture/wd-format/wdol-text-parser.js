@@ -67,12 +67,16 @@ module.exports = function() {
   };
 
   let replace = function(pattern, subject) {
-    return subject.replace(pattern);
+    let result = subject.replace(pattern);
+    if (result != null) {
+      return result.trim();
+    }
+    return null;
   };
 
   let parseModifications = function(content) {
     let modifcationSection = match(WD_MODIFICATIONS, content);
-    let modifications = modifcationSection !== null ? modifcationSection.match(/\d{2}\/\d{2}\/\d{4}/gi) : null;
+    let modifications = modifcationSection !== null ? match(/\d{2}\/\d{2}\/\d{4}/gi, modifcationSection) : null;
     return modifications;
   };
 

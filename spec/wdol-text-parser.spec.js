@@ -51,6 +51,13 @@ describe('WDOL Text Parser module', function() {
      });
     });
 
+    it('should throw error on providing non-text format', function(done) {
+      parser.parseWageDeterminationText(12345678, function(error, wageDetermination) {
+        expect(error).to.be.defined;
+        done();
+      });
+     });
+
    it('should throw error when given wrong filePath', function(done) {
       parser.parseWageDeterminationTextFile('./spec/fixture/wage-determination.textd', function(error, wageDetermination) {
         expect(error).to.be.defined;
