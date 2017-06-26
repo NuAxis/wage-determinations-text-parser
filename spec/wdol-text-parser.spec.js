@@ -21,6 +21,13 @@ describe('WDOL Text Parser module', function() {
     });
    });
 
+   it('should throw error on invalide file format or content', function(done) {
+     parser.parseWageDeterminationTextFile('./spec/fixture/wd-format/wage-determination2.text', function(error, wageDetermination) {
+       expect(wageDetermination).to.not.be.jsonSchema(wdSchema);
+       done();
+     });
+    });
+
   it('should get wage determination object from file path', function(done) {
     parser.parseWageDeterminationTextFile('./spec/fixture/wd-format/wage-determination1.text', function(error, wageDetermination) {
       expect(error).to.be.undefined;
