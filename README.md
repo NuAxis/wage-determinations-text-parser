@@ -1,5 +1,5 @@
-# opendj-rest-wrapper
-JavaScript library for pasre wdol data from wd text files
+# wage-determination-text-parser
+JavaScript library for parsing wage determination text file. It takes wage determination file or content of text file found at https://www.wdol.gov/dba.aspx and produces JSON object described Wage Determination Object JSON Schema section.
 
     npm install wdol-text-parser
 
@@ -8,58 +8,97 @@ JavaScript library for pasre wdol data from wd text files
 var parser = require('wdol-text-parser');
 
 ```
-
-# Configuration
-```
-Environment variables
-
-```
-
 # Test
 ```
     npm test
 ```
 
-# WD JSON Object Structure
-```
+# Wage Determination Object JSON Schema
+``` json
 
 {
-	"headerInformation": {  --> contains metadata of wage determination
-		"wageDeterminationCode": --> Define effective date of wage determination and its code,
-		"counties": --> Defines in which counties that wage determination is implied,
-		"constructionTypes": --> Defines construction types in which wage determination is implied,
-		"state": --> Defines the name of state in which wage determination is applicable
-	},
-	"modifications": [ --> contains list of modifications of wage determination
-		"12/23/2016"
-	],
-	"wageGroups": [ -->  contains list of wage groups
-		{
-			"wageGroupCode":  -->  Defines code and effective date of wage group,
-			"occupations" [
-				{
-					"title": "Defines title of the occupation ",
-					"rates": [ // contains list of sub occupations of occupation
-						{
-							"title": " -->  title of the sub occupation",
-							"rate": "-->  rate of the sub occupation",
-							"fringe": " -->  fringe of the sub occupation",
-							"isGroup" "-->  defines if occupation contain more, occupations"
-						}
-
-					],
-					"isGroup": --> Defines if occupation contains list of sub occupation rates
-				},
-        {
-          "title": "Bulldozer",
-          "rate": "27.73",
-          "fringe": "14.29",
-          "isGroup": false
+  "type": "object",
+    "properties": {
+        "headerInformation": {
+            "properties": {
+                "constructionTypes": {
+                    "description": "Names of constructions on which wage determination applied ",
+                    "type": "string"
+                },
+                "counties": {
+                    "description": "Names of counties in which wage determination applicable",
+                    "type": "string"
+                },
+                "state": {
+                    "description": "State in which wages are applied ",
+                    "type": "string"
+                },
+                "wageDeterminationCode": {
+                    "description": "Defines code which is combination of effective year and State code",
+                    "pattern": "",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "state",
+                "constructionTypes",
+                "counties",
+                "wageDeterminationCode"
+            ],
+            "type": "object"
+        },
+        "modifications": {
+            "items": {
+                "description": "List of modifications of the current wage determination. ",
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "wageGroups": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "occupations": {
+                        "items": {
+                            "properties": {
+                                "fringe": {
+                                    "description": "Fringe of the occupation ",
+                                    "type": "string"
+                                },
+                                "isGroup": {
+                                    "description": "Defines if the current occupation contains sub occupations ",
+                                    "type": "boolean"
+                                },
+                                "rate": {
+                                    "description": "Rate of the occupation",
+                                    "type": "string"
+                                },
+                                "title": {
+                                    "description": "Name of the occupation ",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "wageGroupCode": {
+                        "description": "Unique wage group which is combination of effective date of the wage.",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
         }
-			]
-		}
-	]
+    },
+    "required": [
+        "modifications",
+        "headerInformation"
+    ]
+
 }
+
 ```
 # Example:  
 ``` json
@@ -109,12 +148,6 @@ Environment variables
 							"isGroup": false
 						},
 						{
-							"title": "Carpanter",
-							"rate": "27.73",
-							"fringe": "14.29",
-							"isGroup": false
-						},
-						{
 							"title": "Electrican",
 							"rate": "27.73",
 							"fringe": "14.29",
@@ -149,30 +182,6 @@ Environment variables
 					"title": " LABORER:  Common or General",
 					"rate": "12.30",
 					"fringe": "1.40",
-					"isGroup": false
-				},
-				{
-					"title": " OPERATOR: Backhoe/Excavator/Trackhoe",
-					"rate": "14.11",
-					"fringe": "0.00",
-					"isGroup": false
-				},
-				{
-					"title": " PLUMBER",
-					"rate": "21.74",
-					"fringe": "5.45",
-					"isGroup": false
-				},
-				{
-					"title": " ROOFER",
-					"rate": "15.56",
-					"fringe": "3.06",
-					"isGroup": false
-				},
-				{
-					"title": " SHEET METAL WORKER, Includes HVAC Duct Installation",
-					"rate": "16.88",
-					"fringe": "2.30",
 					"isGroup": false
 				},
 				{
