@@ -1,11 +1,13 @@
-# wage-determination-text-parser
+# wage-determinations-text-parser
 JavaScript library for parsing wage determination text file. It takes wage determination file or content of text file found at https://www.wdol.gov/dba.aspx and produces JSON object described Wage Determination Object JSON Schema section.
 
-    npm install wdol-text-parser
+```javascript
+npm install wage-determinations-text-parser
+```
 
 # Interfaces
 ```javascript
-var parser = require('wdol-text-parser');
+var parser = require('wage-determinations-text-parser');
 
 ```
 # Test

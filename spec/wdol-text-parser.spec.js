@@ -4,13 +4,22 @@ const WdolTextParser = require('../lib/wdol-text-parser');
 const chai = require('chai');
 const expect = chai.expect;
 const fs = require('fs');
+chai.use(require('chai-json-schema'));
 
+let wdSchema = require('./fixture/schema/wd-schema.json');
  var parser;
 
 describe('WDOL Text Parser module', function() {
   before(function() {
      parser = new WdolTextParser();
   });
+
+  it('should validate the schema of wage-determination', function(done) {
+    parser.parseWageDeterminationTextFile('./spec/fixture/wd-format/wage-determination1.text', function(error, wageDetermination) {
+      expect(wageDetermination).to.be.jsonSchema(wdSchema);
+      done();
+    });
+   });
 
   it('should get wage determination object from file path', function(done) {
     parser.parseWageDeterminationTextFile('./spec/fixture/wd-format/wage-determination1.text', function(error, wageDetermination) {
