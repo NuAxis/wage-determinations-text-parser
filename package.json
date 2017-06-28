@@ -1,7 +1,7 @@
 {
-  "name": "wdol-text-parser",
+  "name": "wage-determinations-text-parser",
   "version": "1.0.0",
-  "description": "JavaScript library for pasre wdol data from wd text files",
+  "description": "JavaScript library for parsing wage determination text file. It takes wage determination file or content of text file found at https://www.wdol.gov/dba.aspx and produces JSON object described Wage Determination Object JSON Schema section.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint lib/**/*.js spec/**/*.js",
@@ -14,20 +14,23 @@
     "url": "git@github.com:NuAxis/wage-determinations-text-parser.git"
   },
   "keywords": [
-    "WDOL Data Parser",
-    "Text Parser"
+    "Wage Determination Parser",
+    "WD Text Parser",
+    "Wage Determinations Parser",
+    "WageDeterminations Parser"
   ],
-  "author": "Irfan Naeem",
+  "author": "Sarfraz Ahmad",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/NuAxis/wage-determinations-text-parser/issues"
   },
   "homepage": "https://github.com/NuAxis/wage-determinations-text-parser#readme",
   "dependencies": {
-    "chai-json-schema": "^1.4.0"
+
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "chai-json-schema": "^1.4.0",
     "eslint": "3.12.2",
     "eslint-config-google": "0.7.1",
     "istanbul": "^1.1.0-alpha.1",

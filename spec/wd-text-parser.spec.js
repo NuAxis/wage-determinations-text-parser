@@ -1,6 +1,6 @@
 'use strict';
 
-const WdolTextParser = require('../lib/wdol-text-parser');
+const WageDeterminationTextParser = require('../lib/wd-text-parser');
 const chai = require('chai');
 const expect = chai.expect;
 const fs = require('fs');
@@ -11,7 +11,7 @@ let wdSchema = require('./fixture/schema/wd-schema.json');
 
 describe('WDOL Text Parser module', function() {
   before(function() {
-     parser = new WdolTextParser();
+     parser = new WageDeterminationTextParser();
   });
 
   it('should validate the schema of wage-determination', function(done) {
