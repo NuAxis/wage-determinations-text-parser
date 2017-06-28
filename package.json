@@ -25,9 +25,7 @@
     "url": "https://github.com/NuAxis/wage-determinations-text-parser/issues"
   },
   "homepage": "https://github.com/NuAxis/wage-determinations-text-parser#readme",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-json-schema": "^1.4.0",
