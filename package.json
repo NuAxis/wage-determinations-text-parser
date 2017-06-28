@@ -14,10 +14,15 @@
     "url": "git@github.com:NuAxis/wage-determinations-text-parser.git"
   },
   "keywords": [
-    "Wage Determination Parser",
-    "WD Text Parser",
-    "Wage Determinations Parser",
-    "WageDeterminations Parser"
+    "service contract act",
+    "wage determination text parser",
+    "Davis bacon Act",
+    "Contracting officer",
+    "labor officers",
+    "Department of Labor",
+    "General Services Administration",
+    "Department of Defense"
+
   ],
   "author": "Sarfraz Ahmad",
   "license": "MIT",

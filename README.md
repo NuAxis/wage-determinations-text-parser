@@ -1,5 +1,5 @@
 # wage-determinations-text-parser
-JavaScript library for parsing wage determination text file. It takes wage determination file or content of text file found at https://www.wdol.gov/dba.aspx and produces JSON object described Wage Determination Object JSON Schema section.
+JavaScript library for parsing wage determination text file or file content from https://www.wdol.gov/dba.aspx and produces JSON object. Usage of library , schema  and example of JSON object is described below.
 
 ```javascript
 npm install wage-determinations-text-parser
@@ -7,7 +7,24 @@ npm install wage-determinations-text-parser
 
 # Interfaces
 ```javascript
-var parser = require('wage-determinations-text-parser');
+let WDTextParser = require('wage-determinations-text-parser');
+var parser = new WDTextParser();
+parser.parseWageDeterminationTextFile('path/to/wage determination file', function(error, wageDetermination) {
+  // error will be set if parser if unable to parse or provided file content is invalid.
+  // wageDetermination object will be set if parser successfully parse the file text content
+});
+
+```
+
+```javascript
+let fs = require('fs');
+let WDTextParser = require('wage-determinations-text-parser');
+var parser = new WDTextParser();
+let fileContent = fs.readFileSync('path/to/wage determination file', 'UTF-8');
+parser.parseWageDeterminationText(fileContent, function(error, wageDetermination) {
+  // error will be set if parser if unable to parse or provided content is invalid.
+  // wageDetermination object will be set if parser successfully parse the text content
+});
 
 ```
 # Test
@@ -15,7 +32,7 @@ var parser = require('wage-determinations-text-parser');
     npm test
 ```
 
-# Wage Determination Object JSON Schema
+# Wage Determination JSON Object Schema
 ``` json
 
 {
@@ -102,7 +119,7 @@ var parser = require('wage-determinations-text-parser');
 }
 
 ```
-# Example:  
+# Wage Determination JSON Object Sample:  
 ``` json
 {
 	"headerInformation": {
