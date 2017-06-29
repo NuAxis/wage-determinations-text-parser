@@ -1,17 +1,15 @@
 'use strict';
 
-const WageDeterminationTextParser = require('../lib/wd-text-parser');
+const parser = require('../index');
 const chai = require('chai');
 const expect = chai.expect;
 const fs = require('fs');
 chai.use(require('chai-json-schema'));
 
 let wdSchema = require('./fixture/schema/wd-schema.json');
- var parser;
 
-describe('Wage Determination Text Parser Module', function() {
+describe('Wage Determination Text Parser Library', function() {
   before(function() {
-     parser = new WageDeterminationTextParser();
   });
 
   it('should validate the schema of wage-determination', function(done) {

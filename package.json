@@ -32,11 +32,11 @@
   "homepage": "https://github.com/NuAxis/wage-determinations-text-parser#readme",
   "dependencies": {},
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-json-schema": "^1.4.0",
+    "chai": "3.5.0",
+    "chai-json-schema": "1.4.0",
     "eslint": "3.12.2",
     "eslint-config-google": "0.7.1",
-    "istanbul": "^1.1.0-alpha.1",
+    "istanbul": "1.1.0-alpha.1",
     "mocha": "^3.0.0"
   }
 }

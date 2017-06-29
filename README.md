@@ -7,9 +7,8 @@ npm install wage-determinations-text-parser
 
 # Interfaces
 ```javascript
-let WDTextParser = require('wage-determinations-text-parser');
-var parser = new WDTextParser();
-parser.parseWageDeterminationTextFile('path/to/wage determination file', function(error, wageDetermination) {
+let parser = require('wage-determinations-text-parser');
+parser.parseWageDeterminationTextFile('path/to/wage/determination/file', function(error, wageDetermination) {
   // error will be set if parser if unable to parse or provided file content is invalid.
   // wageDetermination object will be set if parser successfully parse the file text content
 });
@@ -18,9 +17,8 @@ parser.parseWageDeterminationTextFile('path/to/wage determination file', functio
 
 ```javascript
 let fs = require('fs');
-let WDTextParser = require('wage-determinations-text-parser');
-var parser = new WDTextParser();
-let fileContent = fs.readFileSync('path/to/wage determination file', 'UTF-8');
+let parser = require('wage-determinations-text-parser');
+let fileContent = fs.readFileSync('path/to/wage/determination/file', 'UTF-8');
 parser.parseWageDeterminationText(fileContent, function(error, wageDetermination) {
   // error will be set if parser if unable to parse or provided content is invalid.
   // wageDetermination object will be set if parser successfully parse the text content

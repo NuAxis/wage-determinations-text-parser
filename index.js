@@ -1,3 +1,7 @@
 'use strict';
 
-module.exports = require('./lib/wd-text-parser');
+let parser = require('./lib/wd-text-parser')();
+module.exports = {
+    parseWageDeterminationTextFile: parser.parseWageDeterminationTextFile,
+    parseWageDeterminationText: parser.parseWageDeterminationText
+  };
