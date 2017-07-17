@@ -6,59 +6,70 @@
         "headerInformation": {
             "properties": {
                 "constructionTypes": {
-                    "description": "Names of constructions on which wage determination applied ",
                     "type": "string"
                 },
                 "counties": {
-                    "description": "Names of counties in which wage determination applicable",
                     "type": "string"
                 },
                 "state": {
-                    "description": "State in which wages are applied ",
                     "type": "string"
                 },
                 "wageDeterminationCode": {
-                    "description": "Defines code which is combination of effective year and State code",
-                    "pattern": "",
                     "type": "string"
                 }
             },
-            "required": [
-                "state",
-                "constructionTypes",
-                "counties",
-                "wageDeterminationCode"
-            ],
             "type": "object"
         },
         "modifications": {
             "items": {
-                "description": "List of modifications of the current wage determination. ",
                 "type": "string"
             },
             "type": "array"
         },
         "wageGroups": {
             "items": {
-                "additionalProperties": false,
                 "properties": {
                     "occupations": {
                         "items": {
                             "properties": {
-                                "fringe": {
-                                    "description": "Fringe of the occupation ",
-                                    "type": "string"
-                                },
                                 "isGroup": {
-                                    "description": "Defines if the current occupation contains sub occupations ",
                                     "type": "boolean"
                                 },
-                                "rate": {
-                                    "description": "Rate of the occupation",
-                                    "type": "string"
+                                "rates": {
+                                    "items": {
+                                        "properties": {
+                                            "isGroup": {
+                                                "type": "boolean"
+                                            },
+                                            "rates": {
+                                                "items": {
+                                                    "properties": {
+                                                        "fringe": {
+                                                            "type": "string"
+                                                        },
+                                                        "isGroup": {
+                                                            "type": "boolean"
+                                                        },
+                                                        "rate": {
+                                                            "type": "string"
+                                                        },
+                                                        "title": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                },
+                                                "type": "array"
+                                            },
+                                            "title": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "type": "array"
                                 },
                                 "title": {
-                                    "description": "Name of the occupation ",
                                     "type": "string"
                                 }
                             },
@@ -66,8 +77,7 @@
                         },
                         "type": "array"
                     },
-                    "wageGroupCode": {
-                        "description": "Unique wage group which is combination of effective date of the wage.",
+                    "wageGroupQualifier": {
                         "type": "string"
                     }
                 },
@@ -76,9 +86,5 @@
             "type": "array"
         }
     },
-    "required": [
-        "modifications",
-        "headerInformation"
-    ],
     "type": "object"
 }

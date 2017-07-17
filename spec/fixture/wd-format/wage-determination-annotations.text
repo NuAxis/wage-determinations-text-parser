@@ -1,14 +1,16 @@
+^^^^^^^^wageDeterminationCode publishedDate^^^^^^^
 General Decision Number: CA20170032 07/07/2017
 
 Superseded General Decision Number: CA20160032
 
 State: California
 
+^^^^constructionTypeList^^^^^^^^
 Construction Types: Heavy (Heavy and Dredging) and Highway
 
-
+^^^^^^location^^^^^^^^^^^^^^^^^^^^
 County: Tulare County in California.
-
+^^^^WageDeterminationHeader^^^^^^^
 DREDGING (excluding self-propelled hopper dredge work), HEAVY
 (excluding water well drilling), AND HIGHWAY CONSTRUCTION
 PROJECTS
@@ -26,7 +28,18 @@ The EO minimum wage rate will be adjusted annually. Additional
 information on contractor requirements and worker protections
 under the EO is available at www.dol.gov/whd/govcontracts.
 
-
+^^^^^^^^^^^modificationList
+<modificationList>
+		<modification>
+			<modificationNumber>0</modificationNumber>
+			<modificationPublicationDate>2017-01-06</modificationPublicationDate>
+		</modification>
+		<modification>
+			<modificationNumber>1</modificationNumber>
+			<modificationPublicationDate>2017-01-27</modificationPublicationDate>
+		</modification>
+		</modificationList>
+^^^^^^^^^^^^^^^^^^^
 Modification Number     Publication Date
           0              01/06/2017
           1              01/27/2017
@@ -40,10 +53,44 @@ Modification Number     Publication Date
           9              06/30/2017
           10             07/07/2017
 
- ASBE0016-006 01/01/2017
+
+^^^^^^^^^ wageGroupList ^^^^^^^^^^^^^^^^
+^^^^^^^^^
+	<wageGroup>
+			<wageGroupCode>ASBE0016006</wageGroupCode>
+			<effectiveDate>2017-01-01</effectiveDate>
+			<wageGroupHeader/>
+			<constructionTypeQualifier/>
+			<locationQualifier/>
+			<occupationList>
+				<occupation>
+					<occupationTitle>Asbestos Removal worker/hazardous material handler</occupationTitle>
+					<occupationQualifier>Includes preparation, wetting, stripping, removal, scrapping, vacuuming, bagging and disposing of all insulation materials from mechanical systems, whether they contain asbestos or not</occupationQualifier>
+					<occupationRate>28.200</occupationRate>
+					<occupationFringe>8.95</occupationFringe>
+					<occupationGroupQualifier/>
+				</occupation>
+			</occupationList>
+			<wageGroupQualifier/>
+			<wageGroupFooter/>
+		</wageGroup>
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ ASBE0016-006 01/01/2017    <wageGroupCode>ASBE0016006</wageGroupCode> <effectiveDate>2017-01-01</effectiveDate>
 
                                   Rates          Fringes
-
+^^^^^^^^ occupationList ^^^^^^^^^^^^^^^
+^^^^^^^^ occupation ^^^^^^^^^^^^^^^
+^^^^^^
+<occupation>
+		<occupationTitle>Asbestos Removal worker/hazardous material handler</occupationTitle>
+		<occupationQualifier>Includes preparation, wetting, stripping, removal, scrapping, vacuuming, bagging and disposing of all insulation materials from mechanical systems, whether they contain asbestos or not</occupationQualifier>
+		<occupationRate>28.200</occupationRate>
+		<occupationFringe>8.95</occupationFringe>
+		<occupationGroupQualifier/>
+</occupation>
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 Asbestos Removal
 worker/hazardous material
 handler (Includes
@@ -105,6 +152,70 @@ BRICKLAYER; MARBLE SETTER........$ 39.11            14.47
   standard San Bernardino/Riverside County hourly wage rate
 
 ----------------------------------------------------------------
+
+^^^^^^^^
+<wageGroup>
+			<wageGroupCode>CARP0034002</wageGroupCode>
+			<effectiveDate>2016-07-01</effectiveDate>
+			<wageGroupHeader/>
+			<constructionTypeQualifier/>
+			<locationQualifier/>
+			<occupationList>
+				<occupation>
+					<occupationTitle>Diver</occupationTitle>
+					<occupationQualifier/>
+					<rateList>
+						<rate>
+							<rateTitle>Assistant Tender, ROV Tender/Technician</rateTitle>
+							<rateRate>43.650</rateRate>
+							<rateFringe>31.40</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>Diver standby</rateTitle>
+							<rateRate>48.610</rateRate>
+							<rateFringe>31.40</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>Diver Tender</rateTitle>
+							<rateRate>47.820</rateRate>
+							<rateFringe>31.40</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>Diver wet</rateTitle>
+							<rateRate>93.170</rateRate>
+							<rateFringe>31.40</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>Manifold Operator (mixed gas)</rateTitle>
+							<rateRate>52.820</rateRate>
+							<rateFringe>31.40</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>Manifold Operator (Standby)</rateTitle>
+							<rateRate>47.820</rateRate>
+							<rateFringe>31.40</rateFringe>
+						</rate>
+					</rateList>
+					<occupationGroupQualifier/>
+				</occupation>
+			</occupationList>
+			<wageGroupQualifier>DEPTH PAY (Surface Diving):
+050 to 100 ft    $2.00 per foot
+101 to 150 ft    $3.00 per foot
+151 to 220 ft    $4.00 per foot
+
+SATURATION DIVING:
+The standby rate shall apply until saturation starts.  The saturation diving rate applies when divers are under pressure continuously until work task and decompression are complete. The diver rate shall be paid for all saturation hours.
+
+DIVING IN ENCLOSURES:
+Where it is necessary for Divers to enter pipes or tunnels, or other enclosures where there is no vertical ascent, the following premium shall be paid:  Distance traveled from entrance 26 feet to 300 feet:  $1.00 per foot.  When it is necessary for a diver to enter any pipe, tunnel or other enclosure less than 48" in height, the premium will be $1.00 per foot.
+
+WORK IN COMBINATION OF CLASSIFICATIONS:
+Employees working in any combination of classifications within the diving crew (except dive supervisor) in a shift are paid in the classification with the highest rate for that shift.</wageGroupQualifier>
+			<wageGroupFooter/>
+		</wageGroup>
+
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  CARP0034-002 07/01/2016
 
                                   Rates          Fringes
@@ -196,6 +307,167 @@ LINE CONSTRUCTION
   and day after Thanksgiving, Christmas Day
 
 ----------------------------------------------------------------
+
+
+^^^^^^
+<wageGroup>
+			<wageGroupCode>ENGI0003008</wageGroupCode>
+			<effectiveDate>2017-07-01</effectiveDate>
+			<wageGroupHeader/>
+			<constructionTypeQualifier/>
+			<locationQualifier/>
+			<occupationList>
+				<occupation>
+					<occupationTitle>Dredging:</occupationTitle>
+					<occupationQualifier>DREDGING: CLAMSHELL &amp; DIPPER DREDGING;  HYDRAULIC SUCTION DREDGING:</occupationQualifier>
+					<rateList>
+						<rate>
+							<rateTitle>AREA 1:</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>(1) Leverman</subrateTitle>
+									<subrateRate>44.770</subrateRate>
+									<subrateFringe>31.25</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>(2) Dredge Dozer; Heavy duty repairman</subrateTitle>
+									<subrateRate>39.810</subrateRate>
+									<subrateFringe>31.25</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>(3) Booster Pump Operator; Deck   Engineer; Deck mate; Dredge Tender; Winch Operator</subrateTitle>
+									<subrateRate>38.690</subrateRate>
+									<subrateFringe>31.25</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>(4) Bargeman; Deckhand; Fireman; Leveehand; Oiler</subrateTitle>
+									<subrateRate>35.390</subrateRate>
+									<subrateFringe>31.25</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>AREA 2:</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>(1) Leverman</subrateTitle>
+									<subrateRate>46.770</subrateRate>
+									<subrateFringe>31.25</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>(2) Dredge Dozer; Heavy duty repairman</subrateTitle>
+									<subrateRate>41.810</subrateRate>
+									<subrateFringe>31.25</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>(3) Booster Pump Operator; Deck   Engineer; Deck mate; Dredge Tender; Winch Operator</subrateTitle>
+									<subrateRate>40.690</subrateRate>
+									<subrateFringe>31.25</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>(4) Bargeman; Deckhand; Fireman; Leveehand; Oiler</subrateTitle>
+									<subrateRate>37.390</subrateRate>
+									<subrateFringe>31.25</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+					</rateList>
+					<occupationGroupQualifier/>
+				</occupation>
+			</occupationList>
+			<wageGroupQualifier>
+      AREA DESCRIPTIONS
+
+AREA 1: ALAMEDA,BUTTE, CONTRA COSTA, KINGS, MARIN, MERCED, NAPA, SACRAMENTO, SAN BENITO, SAN FRANCISCO, SAN JOAQUIN, SAN MATEO, SANTA CLARA, SANTA CRUZ, SOLANO, STANISLAUS, SUTTER, YOLO, AND YUBA COUNTIES
+
+AREA 2:  MODOC COUNTY
+
+THE REMAINGING COUNTIES ARE SPLIT BETWEEN AREA 1 AND AREA 2 AS NOTED BELOW:
+
+ALPINE COUNTY:
+Area 1:  Northernmost part
+Area 2:  Remainder
+
+CALAVERAS COUNTY:
+Area 1: Remainder
+Area 2: Eastern part
+
+COLUSA COUNTY:
+Area 1:  Eastern part
+Area 2:  Remainder
+
+ELDORADO COUNTY:
+Area 1:  North Central part
+Area 2:  Remainder
+
+FRESNO COUNTY:
+Area 1: Remainder
+Area 2: Eastern part
+
+GLENN COUNTY:
+Area 1:  Eastern part
+Area 2: Remainder
+
+LASSEN COUNTY:
+Area 1:  Western part along the Southern portion of border with Shasta County
+Area 2:  Remainder
+
+MADERA COUNTY:
+Area 1: Except Eastern part
+Area 2: Eastern part
+
+MARIPOSA COUNTY
+Area 1: Except Eastern part
+Area 2: Eastern part
+
+MONTERREY COUNTY
+Area 1: Except Southwestern part
+Area 2: Southwestern part
+
+NEVADA COUNTY:
+Area 1:  All but the Northern portion along the border of Sierra County
+Area 2:  Remainder
+
+PLACER COUNTY:
+Area 1:  Al but the Central portion
+Area 2:  Remainder
+
+PLUMAS COUNTY:
+Area 1:  Western portion
+Area 2:  Remainder
+
+SHASTA COUNTY:
+Area 1:  All but the Northeastern corner
+Area 2:  Remainder
+
+SIERRA COUNTY:
+Area 1:  Western part
+Area 2:  Remainder
+
+SISKIYOU COUNTY:
+Area 1:  Central part
+Area 2:  Remainder
+
+SONOMA COUNTY:
+Area 1:  All but the Northwestern corner
+Area 2:  Remainder
+
+TEHAMA COUNTY:
+Area 1:  All but the Western border with Mendocino &amp; Trinity Counties
+Area 2:  Remainder
+
+TRINITY COUNTY:
+Area 1:  East Central part and the Northeastern border with Shasta County
+Area 2:  Remainder
+
+TUOLUMNE COUNTY:
+Area 1: Except Eastern part
+Area 2: Eastern part
+</wageGroupQualifier>
+<wageGroupFooter/>
+</wageGroup>
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * ENGI0003-008 07/01/2017
 
                                   Rates          Fringes
@@ -323,6 +595,675 @@ Area 1: Except Eastern part
 Area 2: Eastern part
 
 ----------------------------------------------------------------
+
+
+^^^^^^^^^^^^^^^^^
+<wageGroup>
+			<wageGroupCode>ENGI0003018</wageGroupCode>
+			<effectiveDate>2017-06-26</effectiveDate>
+			<wageGroupHeader/>
+			<constructionTypeQualifier/>
+			<locationQualifier>"AREA 1" WAGE RATES ARE LISTED BELOW
+
+"AREA 2" RECEIVES AN ADDITIONAL $2.00 PER HOUR ABOVE AREA 1 RATES.
+
+SEE AREA DEFINITIONS BELOW</locationQualifier>
+			<occupationList>
+				<occupation>
+					<occupationTitle>OPERATOR:  Power Equipment</occupationTitle>
+					<occupationQualifier>Tunnel and Underground Work - AREA 1:</occupationQualifier>
+					<rateList>
+						<rate>
+							<rateTitle>SHAFTS, STOPES, RAISES:</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>GROUP 1</subrateTitle>
+									<subrateRate>40.770</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>GROUP 1-A</subrateTitle>
+									<subrateRate>43.240</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>GROUP 2</subrateTitle>
+									<subrateRate>39.510</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>GROUP 3</subrateTitle>
+									<subrateRate>38.180</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>GROUP 4</subrateTitle>
+									<subrateRate>37.040</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>GROUP 5</subrateTitle>
+									<subrateRate>35.900</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>UNDERGROUND:</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>GROUP 1</subrateTitle>
+									<subrateRate>40.670</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>GROUP 1-A</subrateTitle>
+									<subrateRate>43.140</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>GROUP 2</subrateTitle>
+									<subrateRate>39.410</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>GROUP 3</subrateTitle>
+									<subrateRate>38.080</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>GROUP 4</subrateTitle>
+									<subrateRate>36.940</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>GROUP 5</subrateTitle>
+									<subrateRate>35.800</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+					</rateList>
+					<occupationGroupQualifier/>
+				</occupation>
+				<occupation>
+					<occupationTitle>OPERATOR:  Power Equipment</occupationTitle>
+					<occupationQualifier>Steel Erection - AREA 1:</occupationQualifier>
+					<rateList>
+						<rate>
+							<rateTitle>GROUP 1</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Cranes</subrateTitle>
+									<subrateRate>46.300</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Oiler</subrateTitle>
+									<subrateRate>36.630</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Truck Crane Oiler</subrateTitle>
+									<subrateRate>39.200</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 2</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Cranes</subrateTitle>
+									<subrateRate>43.790</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Oiler</subrateTitle>
+									<subrateRate>36.360</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Truck Crane Oiler</subrateTitle>
+									<subrateRate>38.980</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 3</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Cranes</subrateTitle>
+									<subrateRate>42.050</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Hydraulic</subrateTitle>
+									<subrateRate>38.320</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Oiler</subrateTitle>
+									<subrateRate>36.140</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Truck Crane Oiler</subrateTitle>
+									<subrateRate>38.710</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 4</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Cranes</subrateTitle>
+									<subrateRate>39.010</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 5</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Cranes</subrateTitle>
+									<subrateRate>35.130</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+					</rateList>
+					<occupationGroupQualifier/>
+				</occupation>
+				<occupation>
+					<occupationTitle>OPERATOR:  Power Equipment</occupationTitle>
+					<occupationQualifier>Piledriving - AREA 1:</occupationQualifier>
+					<rateList>
+						<rate>
+							<rateTitle>GROUP 1</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Lifting devices</subrateTitle>
+									<subrateRate>41.070</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Lifting devices</subrateTitle>
+									<subrateRate>45.890</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Oiler</subrateTitle>
+									<subrateRate>31.810</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Oiler</subrateTitle>
+									<subrateRate>36.630</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Truck crane oiler</subrateTitle>
+									<subrateRate>34.090</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Truck crane oiler</subrateTitle>
+									<subrateRate>39.200</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 2</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Lifting devices</subrateTitle>
+									<subrateRate>39.250</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Lifting devices</subrateTitle>
+									<subrateRate>44.070</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Oiler</subrateTitle>
+									<subrateRate>31.540</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Oiler</subrateTitle>
+									<subrateRate>36.360</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Truck Crane Oiler</subrateTitle>
+									<subrateRate>33.840</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Truck Crane Oiler</subrateTitle>
+									<subrateRate>38.980</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 3</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Lifting devices</subrateTitle>
+									<subrateRate>37.570</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Lifting devices</subrateTitle>
+									<subrateRate>42.390</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Oiler</subrateTitle>
+									<subrateRate>31.320</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Oiler</subrateTitle>
+									<subrateRate>36.140</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Truck Crane Oiler</subrateTitle>
+									<subrateRate>33.550</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Truck Crane Oiler</subrateTitle>
+									<subrateRate>38.710</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 4</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Lifting devices</subrateTitle>
+									<subrateRate>35.800</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Lifting devices</subrateTitle>
+									<subrateRate>40.620</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 5</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Lifting devices</subrateTitle>
+									<subrateRate>34.500</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Lifting devices</subrateTitle>
+									<subrateRate>39.320</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 6</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Lifting devices</subrateTitle>
+									<subrateRate>33.160</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Lifting devices</subrateTitle>
+									<subrateRate>37.980</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+					</rateList>
+					<occupationGroupQualifier/>
+				</occupation>
+				<occupation>
+					<occupationTitle>OPERATOR:  Power Equipment</occupationTitle>
+					<occupationQualifier>Cranes and Attachments - AREA 1:</occupationQualifier>
+					<rateList>
+						<rate>
+							<rateTitle>GROUP 1</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Cranes</subrateTitle>
+									<subrateRate>46.300</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Oiler</subrateTitle>
+									<subrateRate>36.630</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Truck crane oiler</subrateTitle>
+									<subrateRate>39.200</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 2</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Cranes</subrateTitle>
+									<subrateRate>43.790</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Oiler</subrateTitle>
+									<subrateRate>36.360</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Truck crane oiler</subrateTitle>
+									<subrateRate>38.980</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 3</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Cranes</subrateTitle>
+									<subrateRate>42.050</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Hydraulic</subrateTitle>
+									<subrateRate>38.320</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Oiler</subrateTitle>
+									<subrateRate>36.140</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>Truck Crane Oiler</subrateTitle>
+									<subrateRate>38.710</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 4</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>Cranes</subrateTitle>
+									<subrateRate>39.010</subrateRate>
+									<subrateFringe>30.39</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+					</rateList>
+					<occupationGroupQualifier/>
+				</occupation>
+				<occupation>
+					<occupationTitle>OPERATOR:  Power Equipment</occupationTitle>
+					<occupationQualifier>AREA 1:</occupationQualifier>
+					<rateList>
+						<rate>
+							<rateTitle>GROUP 1</rateTitle>
+							<rateRate>44.670</rateRate>
+							<rateFringe>30.39</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 2</rateTitle>
+							<rateRate>43.140</rateRate>
+							<rateFringe>30.39</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 3</rateTitle>
+							<rateRate>41.660</rateRate>
+							<rateFringe>30.39</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 4</rateTitle>
+							<rateRate>40.280</rateRate>
+							<rateFringe>30.39</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 5</rateTitle>
+							<rateRate>39.010</rateRate>
+							<rateFringe>30.39</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 6</rateTitle>
+							<rateRate>37.690</rateRate>
+							<rateFringe>30.39</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 7</rateTitle>
+							<rateRate>36.550</rateRate>
+							<rateFringe>30.39</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 8</rateTitle>
+							<rateRate>35.410</rateRate>
+							<rateFringe>30.39</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 8-A</rateTitle>
+							<rateRate>33.200</rateRate>
+							<rateFringe>30.39</rateFringe>
+						</rate>
+					</rateList>
+					<occupationGroupQualifier/>
+				</occupation>
+			</occupationList>
+			<wageGroupQualifier>FOOTNOTE: Work suspended by ropes or cables, or work on a Yo-Yo Cat: $.60 per hour additional.
+
+
+  POWER EQUIPMENT OPERATOR CLASSIFICATIONS
+
+GROUP 1: Operator of helicopter (when used in erection work); Hydraulic excavator, 7 cu. yds. and over; Power shovels, over 7 cu. yds.
+
+GROUP 2: Highline cableway; Hydraulic excavator, 3-1/2 cu. yds. up to 7 cu. yds.; Licensed construction work boat operator, on site; Power blade operator (finish); Power shovels, over 1 cu. yd. up to and including 7 cu. yds. m.r.c.
+
+GROUP 3: Asphalt milling machine; Cable backhoe; Combination backhoe and loader over 3/4 cu. yds.; Continuous flight tie back machine assistant to engineer or mechanic; Crane mounted continuous flight tie back machine, tonnage to apply; Crane mounted drill attachment, tonnage to apply; Dozer, slope brd; Gradall; Hydraulic excavator, up to 3 1/2 cu. yds.; Loader 4 cu. yds. and over; Long reach excavator; Multiple engine scraper (when used as push pull); Power shovels, up to and including 1 cu. yd.; Pre-stress wire wrapping machine; Side boom cat, 572 or larger; Track loader 4 cu. yds. and over; Wheel excavator (up to and including 750 cu. yds. per hour)
+
+GROUP 4: Asphalt plant engineer/box person; Chicago boom; Combination backhoe and loader up to and including 3/4 cu. yd.; Concrete batch plant (wet or dry); Dozer and/or push cat; Pull- type elevating loader; Gradesetter, grade checker (GPS, mechanical or otherwise); Grooving and grinding machine; Heading shield operator; Heavy-duty drilling equipment, Hughes, LDH, Watson 3000 or similar; Heavy-duty repairperson and/or welder; Lime spreader; Loader under 4 cu. yds.; Lubrication and service engineer (mobile and grease rack); Mechanical finishers or spreader machine (asphalt, Barber-Greene and similar); Miller Formless M-9000 slope paver or similar; Portable crushing and screening plants; Power blade support; Roller operator, asphalt; Rubber-tired scraper, self-loading (paddle-wheels, etc.); Rubber- tired earthmoving equipment (scrapers); Slip form paver (concrete); Small tractor with drag; Soil stabilizer (P &amp; H or equal); Spider plow and spider puller; Tubex pile rig; Unlicensed constuction work boat operator, on site; Timber skidder; Track loader up to 4 yds.; Tractor-drawn scraper; Tractor, compressor drill combination; Welder; Woods-Mixer (and other similar Pugmill equipment)
+
+GROUP 5: Cast-in-place pipe laying machine; Combination slusher and motor operator; Concrete conveyor or concrete pump, truck or equipment mounted; Concrete conveyor, building site; Concrete pump or pumpcrete gun; Drilling equipment, Watson 2000, Texoma 700 or similar; Drilling and boring machinery, horizontal (not to apply to waterliners, wagon drills or jackhammers); Concrete mixer/all; Person and/or material hoist; Mechanical finishers (concrete) (Clary, Johnson, Bidwell Bridge Deck or similar types); Mechanical burm, curb and/or curb and gutter machine, concrete or asphalt); Mine or shaft hoist; Portable crusher; Power jumbo operator (setting slip-forms, etc., in tunnels); Screed (automatic or manual); Self-propelled compactor with dozer; Tractor with boom D6 or smaller; Trenching machine, maximum digging capacity over 5 ft. depth; Vermeer T-600B rock cutter or similar
+
+GROUP 6: Armor-Coater (or similar); Ballast jack tamper; Boom- type backfilling machine; Assistant plant engineer; Bridge and/or gantry crane; Chemical grouting machine, truck-mounted; Chip spreading machine operator; Concrete saw (self-propelled unit on streets, highways, airports and canals); Deck engineer; Drilling equipment Texoma 600, Hughes 200 Series or similar up to and including 30 ft. m.r.c.; Drill doctor; Helicopter radio operator; Hydro-hammer or similar; Line master; Skidsteer loader, Bobcat larger than 743 series or similar (with attachments); Locomotive; Lull hi-lift or similar; Oiler, truck mounted equipment; Pavement breaker, truck-mounted, with compressor combination; Paving fabric installation and/or laying machine; Pipe bending machine (pipelines only); Pipe wrapping machine (tractor propelled and supported); Screed (except asphaltic concrete paving); Self- propelled pipeline wrapping machine; Tractor; Self-loading chipper; Concrete barrier moving machine
+
+GROUP 7: Ballast regulator; Boom truck or dual-purpose A-frame truck, non-rotating - under 15 tons; Cary lift or similar; Combination slurry mixer and/or cleaner; Drilling equipment, 20 ft. and under m.r.c.; Firetender (hot plant); Grouting machine operator; Highline cableway signalperson; Stationary belt loader (Kolman or similar); Lift slab machine (Vagtborg and similar types); Maginnes internal full slab vibrator; Material hoist (1 drum); Mechanical trench shield; Pavement breaker with or without compressor combination); Pipe cleaning machine (tractor propelled and supported); Post driver; Roller (except asphalt); Chip Seal; Self-propelled automatically applied concrete curing mahcine (on streets, highways, airports and canals); Self-propelled compactor (without dozer); Signalperson; Slip-form pumps (lifting device for concrete forms); Tie spacer; Tower mobile; Trenching machine, maximum digging capacity up to and including 5 ft. depth; Truck- type loader
+
+GROUP 8: Bit sharpener; Boiler tender; Box operator; Brakeperson; Combination mixer and compressor (shotcrete/gunite); Compressor operator; Deckhand; Fire tender; Forklift (under 20 ft.); Generator; Gunite/shotcrete equipment operator; Hydraulic monitor; Ken seal machine (or similar); Mixermobile; Oiler; Pump operator; Refrigeration plant; Reservoir-debris tug (self- propelled floating); Ross Carrier (construction site); Rotomist operator; Self-propelled tape machine; Shuttlecar; Self-propelled power sweeper operator (includes vacuum sweeper);  Slusher operator; Surface heater; Switchperson; Tar pot firetender; Tugger hoist, single drum; Vacuum cooling plant; Welding machine (powered other than by electricity)
+
+GROUP 8-A: Elevator operator; Skidsteer loader-Bobcat 743 series or smaller, and similar (without attachments); Mini excavator under 25 H.P. (backhoe-trencher); Tub grinder wood chipper
+
+----------------------------------------------------------
+
+     ALL CRANES AND ATTACHMENTS
+
+GROUP 1: Clamshell and dragline over 7 cu. yds.; Crane, over 100 tons; Derrick, over 100 tons; Derrick barge pedestal-mounted, over 100 tons; Self-propelled boom-type lifting device, over 100 tons
+
+GROUP 2: Clamshell and dragline over 1 cu. yd. up to and including 7 cu. yds.; Crane, over 45 tons up to and including 100 tons; Derrick barge, 100 tons and under; Self-propelled boom-type lifting device, over 45 tons; Tower crane
+
+GROUP 3: Clamshell and dragline up to and including 1 cu. yd.; Cranes 45 tons and under; Self-propelled boom-type lifting device 45 tons and under;
+
+GROUP 4: Boom Truck or dual purpose A-frame truck, non-rotating over 15 tons; Truck-mounted rotating telescopic boom type lifting device, Manitex or similar (boom truck) over 15 tons; Truck-mounted rotating telescopic boom type lifting device, Manitex or similar (boom truck) - under 15 tons;
+
+-----------------------------------------------------------
+
+                 PILEDRIVERS
+
+GROUP 1: Derrick barge pedestal mounted over 100 tons; Clamshell over 7 cu. yds.; Self-propelled boom-type lifting device over 100 tons; Truck crane or crawler, land or barge mounted over 100 tons
+
+GROUP 2: Derrick barge pedestal mounted 45 tons to and including 100 tons; Clamshell up to and including 7 cu. yds.; Self-propelled boom-type lifting device over 45 tons; Truck crane or crawler, land or barge mounted, over 45 tons up to and including 100 tons; Fundex F-12 hydraulic pile rig
+
+GROUP 3: Derrick barge pedestal mounted under 45 tons; Self- propelled boom-type lifting device 45 tons and under; Skid/scow piledriver, any tonnage; Truck crane or crawler, land or barge mounted 45 tons and under
+
+GROUP 4: Assistant operator in lieu of assistant to engineer; Forklift, 10 tons and over; Heavy-duty repairperson/welder
+
+GROUP 5: Deck engineer
+
+GROUP 6: Deckhand; Fire tender
+
+-------------------------------------------------------------
+
+            STEEL ERECTORS
+
+GROUP 1: Crane over 100 tons; Derrick over 100 tons; Self- propelled boom-type lifting device over 100 tons
+
+GROUP 2: Crane over 45 tons to 100 tons; Derrick under 100 tons; Self-propelled boom-type lifting device over 45 tons to 100 tons; Tower crane
+
+GROUP 3: Crane, 45 tons and under; Self-propelled boom-type lifting device, 45 tons and under
+
+GROUP 4: Chicago boom; Forklift, 10 tons and over; Heavy-duty repair person/welder
+
+GROUP 5: Boom cat
+
+----------------------------------------------------------------
+
+  TUNNEL AND UNDERGROUND WORK
+
+GROUP 1-A: Tunnel bore machine operator, 20' diameter or more
+
+GROUP 1: Heading shield operator; Heavy-duty repairperson; Mucking machine (rubber tired, rail or track type); Raised bore operator (tunnels); Tunnel mole bore operator
+
+GROUP 2: Combination slusher and motor operator; Concrete pump or pumpcrete gun; Power jumbo operator
+
+GROUP 3: Drill doctor; Mine or shaft hoist
+
+GROUP 4: Combination slurry mixer cleaner; Grouting Machine operator; Motorman
+
+GROUP 5: Bit Sharpener; Brakeman; Combination mixer and compressor (gunite); Compressor operator; Oiler; Pump operator; Slusher operator
+-----------------------------------------------------------
+
+AREA DESCRIPTIONS:
+
+POWER EQUIPMENT OPERATORS, CRANES AND ATTACHMENTS,TUNNEL AND UNDERGROUND  [These areas do not apply to Piledrivers and Steel Erectors]
+
+AREA 1: ALAMEDA, BUTTE, CONTRA COSTA, KINGS, MARIN,  MERCED, NAPA, SACRAMENTO, SAN BENITO, SAN FRANCISCO, SAN JOAQUIN, SAN MATEO, SANTA CLARA, SANTA CRUZ, SOLANO, STANISLAUS, SUTTER, YOLO, AND YUBA COUNTIES
+
+AREA 2 - MODOC COUNTY
+
+THE REMAINING COUNTIES ARE SPLIT BETWEEN AREA 1 AND AREA 2 AS NOTED BELOW:
+
+ALPINE COUNTY:
+Area 1: Northernmost part
+Area 2: Remainder
+
+CALAVERAS COUNTY:
+Area 1: Except Eastern part
+Area 2: Eastern part
+
+COLUSA COUNTY:
+Area 1: Eastern part
+Area 2: Remainder
+
+DEL NORTE COUNTY:
+Area 1: Extreme Southwestern corner
+Area 2: Remainder
+
+ELDORADO COUNTY:
+Area 1: North Central part
+Area 2: Remainder
+
+FRESNO COUNTY
+Area 1: Except Eastern part
+Area 2: Eastern part
+
+GLENN COUNTY:
+Area 1: Eastern part
+Area 2: Remainder
+
+HUMBOLDT COUNTY:
+Area 1: Except Eastern and Southwestern parts
+Area 2: Remainder
+
+LAKE COUNTY:
+Area 1: Southern part
+Area 2: Remainder
+
+LASSEN COUNTY:
+Area 1: Western part along the Southern portion of border with Shasta County
+Area 2: Remainder
+
+MADERA COUNTY
+Area 1: Remainder
+Area 2: Eastern part
+
+MARIPOSA COUNTY
+Area 1: Remainder
+Area 2: Eastern part
+
+MENDOCINO COUNTY:
+Area 1: Central and Southeastern parts
+Area 2: Remainder
+
+MONTEREY COUNTY
+Area 1: Remainder
+Area 2: Southwestern part
+
+NEVADA COUNTY:
+Area 1: All but the Northern portion along the border of Sierra County
+Area 2: Remainder
+
+PLACER COUNTY:
+Area 1: All but the Central portion
+Area 2: Remainder
+
+PLUMAS COUNTY:
+Area 1: Western portion
+Area 2: Remainder
+
+SHASTA COUNTY:
+Area 1: All but the Northeastern corner
+Area 2: Remainder
+
+SIERRA COUNTY:
+Area 1: Western part
+Area 2: Remainder
+
+SISKIYOU COUNTY:
+Area 1: Central part
+Area 2: Remainder
+
+SONOMA COUNTY:
+Area 1: All but the Northwestern corner
+Area 2: Reaminder
+
+TEHAMA COUNTY:
+Area 1: All but the Western border with mendocino &amp; Trinity Counties
+Area 2: Remainder
+
+TRINITY COUNTY:
+Area 1: East Central part and the Northeaster border with Shasta County
+Area 2: Remainder
+
+TULARE COUNTY;
+Area 1: Remainder
+Area 2: Eastern part
+
+TUOLUMNE COUNTY:
+Area 1: Remainder
+Area 2: Eastern Part</wageGroupQualifier>
+			<wageGroupFooter/>
+		</wageGroup>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * ENGI0003-018 06/26/2017
 
 "AREA 1" WAGE RATES ARE LISTED BELOW
@@ -765,8 +1706,185 @@ Area 1: Remainder
 Area 2: Eastern Part
 
 ----------------------------------------------------------------
---------------------------------------------------------------
---
+^^^^^^^^^^^^^^^^^^^^^^^
+<wageGroup>
+			<wageGroupCode>ENGI0003019</wageGroupCode>
+			<effectiveDate>2013-07-01</effectiveDate>
+			<wageGroupHeader/>
+			<constructionTypeQualifier/>
+			<locationQualifier>SEE AREA DESCRIPTIONS BELOW</locationQualifier>
+			<occupationList>
+				<occupation>
+					<occupationTitle>OPERATOR:  Power Equipment</occupationTitle>
+					<occupationQualifier>LANDSCAPE WORK ONLY</occupationQualifier>
+					<rateList>
+						<rate>
+							<rateTitle>GROUP 1</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>AREA 1</subrateTitle>
+									<subrateRate>29.640</subrateRate>
+									<subrateFringe>25.71</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>AREA 2</subrateTitle>
+									<subrateRate>31.640</subrateRate>
+									<subrateFringe>25.71</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 2</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>AREA 1</subrateTitle>
+									<subrateRate>26.040</subrateRate>
+									<subrateFringe>25.71</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>AREA 2</subrateTitle>
+									<subrateRate>28.040</subrateRate>
+									<subrateFringe>25.71</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 3</rateTitle>
+							<subrateList>
+								<subrate>
+									<subrateTitle>AREA 1</subrateTitle>
+									<subrateRate>21.430</subrateRate>
+									<subrateFringe>25.71</subrateFringe>
+								</subrate>
+								<subrate>
+									<subrateTitle>AREA 2</subrateTitle>
+									<subrateRate>23.430</subrateRate>
+									<subrateFringe>25.71</subrateFringe>
+								</subrate>
+							</subrateList>
+						</rate>
+					</rateList>
+					<occupationGroupQualifier/>
+				</occupation>
+			</occupationList>
+			<wageGroupQualifier>GROUP DESCRIPTIONS:
+
+GROUP 1:  Landscape Finish Grade Operator: All finish grade work regardless of equipment used, and all equipment with a rating more than 65 HP.
+
+GROUP 2:  Landscape Operator up to 65 HP: All equipment with a manufacturer's rating of 65 HP or less except equipment covered by Group 1 or Group 3.  The following equipment shall be included except when used for finish work as long as manufacturer's rating is 65 HP or less: A-Frame and Winch Truck, Backhoe, Forklift, Hydragraphic Seeder Machine, Roller, Rubber-Tired and Track Earthmoving Equipment, Skiploader, Straw Blowers, and Trencher 31 HP up to 65 HP.
+
+GROUP 3: Landscae Utility Operator: Small Rubber-Tired Tractor, Trencher Under 31 HP.
+
+AREA DESCRIPTIONS:
+
+AREA 1: ALAMEDA, BUTTE, CONTRA COSTA, KINGS, MARIN,  MERCED, NAPA, SACRAMENTO, SAN BENITO, SAN FRANCISCO, SAN JOAQUIN, SAN MATEO, SANTA CLARA, SANTA CRUZ, SOLANO, STANISLAUS, SUTTER, YOLO, AND YUBA COUNTIES
+
+AREA 2 - MODOC COUNTY
+
+THE REMAINING COUNTIES ARE SPLIT BETWEEN AREA 1 AND AREA 2 AS NOTED BELOW:
+
+ALPINE COUNTY:
+Area 1: Northernmost part
+Area 2: Remainder
+
+CALAVERAS COUNTY:
+Area 1: Except Eastern part
+Area 2: Eastern part
+
+COLUSA COUNTY:
+Area 1: Eastern part
+Area 2: Remainder
+
+DEL NORTE COUNTY:
+Area 1: Extreme Southwestern corner
+Area 2: Remainder
+
+ELDORADO COUNTY:
+Area 1: North Central part
+Area 2: Remainder
+
+FRESNO COUNTY
+Area 1: Except Eastern part
+Area 2: Eastern part
+
+GLENN COUNTY:
+Area 1: Eastern part
+Area 2: Remainder
+
+HUMBOLDT COUNTY:
+Area 1: Except Eastern and Southwestern parts
+Area 2: Remainder
+
+LAKE COUNTY:
+Area 1: Southern part
+Area 2: Remainder
+
+LASSEN COUNTY:
+Area 1: Western part along the Southern portion of border with Shasta County
+Area 2: Remainder
+
+MADERA COUNTY
+Area 1: Remainder
+Area 2: Eastern part
+
+MARIPOSA COUNTY
+Area 1: Remainder
+Area 2: Eastern part
+
+MENDOCINO COUNTY:
+Area 1: Central and Southeastern parts
+Area 2: Remainder
+
+MONTEREY COUNTY
+Area 1: Remainder
+Area 2: Southwestern part
+
+NEVADA COUNTY:
+Area 1: All but the Northern portion along the border of Sierra County
+Area 2: Remainder
+
+PLACER COUNTY:
+Area 1: All but the Central portion
+Area 2: Remainder
+
+PLUMAS COUNTY:
+Area 1: Western portion
+Area 2: Remainder
+
+SHASTA COUNTY:
+Area 1: All but the Northeastern corner
+Area 2: Remainder
+
+SIERRA COUNTY:
+Area 1: Western part
+Area 2: Remainder
+
+SISKIYOU COUNTY:
+Area 1: Central part
+Area 2: Remainder
+
+SONOMA COUNTY:
+Area 1: All but the Northwestern corner
+Area 2: Reaminder
+
+TEHAMA COUNTY:
+Area 1: All but the Western border with mendocino &amp; Trinity Counties
+Area 2: Remainder
+
+TRINITY COUNTY:
+Area 1: East Central part and the Northeaster border with Shasta County
+Area 2: Remainder
+
+TULARE COUNTY;
+Area 1: Remainder
+Area 2: Eastern part
+
+TUOLUMNE COUNTY:
+Area 1: Remainder
+Area 2: Eastern Part</wageGroupQualifier>
+			<wageGroupFooter/>
+		</wageGroup>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  ENGI0003-019 07/01/2013
 
 SEE AREA DESCRIPTIONS BELOW
@@ -921,6 +2039,50 @@ Area 1: Remainder
 Area 2: Eastern Part
 
 ----------------------------------------------------------------
+
+^^^^^^^^^^^^
+<wageGroup>
+			<wageGroupCode>IRON0377002</wageGroupCode>
+			<effectiveDate>2016-07-01</effectiveDate>
+			<wageGroupHeader/>
+			<constructionTypeQualifier/>
+			<locationQualifier/>
+			<occupationList>
+				<occupation>
+					<occupationTitle>Ironworkers:</occupationTitle>
+					<occupationQualifier/>
+					<rateList>
+						<rate>
+							<rateTitle>Fence Erector</rateTitle>
+							<rateRate>28.330</rateRate>
+							<rateFringe>20.64</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>Ornamental, Reinforcing and Structural</rateTitle>
+							<rateRate>34.750</rateRate>
+							<rateFringe>29.20</rateFringe>
+						</rate>
+					</rateList>
+					<occupationGroupQualifier/>
+				</occupation>
+			</occupationList>
+			<wageGroupQualifier/>
+			<wageGroupFooter>PREMIUM PAY:
+
+$6.00 additional per hour at the following locations:
+
+China Lake Naval Test Station, Chocolate Mountains Naval Reserve-Niland,
+Edwards AFB, Fort Irwin Military Station, Fort Irwin Training Center-Goldstone, San Clemente Island, San Nicholas Island, Susanville Federal Prison, 29 Palms - Marine Corps, U.S. Marine Base - Barstow, U.S. Naval Air Facility - Sealey, Vandenberg AFB
+
+$4.00 additional per hour at the following locations:
+
+Army Defense Language Institute - Monterey, Fallon Air Base, Naval Post Graduate School - Monterey, Yermo Marine Corps Logistics Center
+
+$2.00 additional per hour at the following locations:
+
+Port Hueneme, Port Mugu, U.S. Coast Guard Station - Two Rock</wageGroupFooter>
+		</wageGroup>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  IRON0377-002 07/01/2016
 
                                   Rates          Fringes
@@ -971,6 +2133,178 @@ CLOSURE)
   cushions.
 
 ----------------------------------------------------------------
+
+^^^^^^^^
+<wageGroup>
+			<wageGroupCode>LABO0294004</wageGroupCode>
+			<effectiveDate>2014-06-30</effectiveDate>
+			<wageGroupHeader/>
+			<constructionTypeQualifier/>
+			<locationQualifier/>
+			<occupationList>
+				<occupation>
+					<occupationTitle>Laborers:</occupationTitle>
+					<occupationQualifier>GUNITE</occupationQualifier>
+					<rateList>
+						<rate>
+							<rateTitle>GROUP 1</rateTitle>
+							<rateRate>28.350</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 2</rateTitle>
+							<rateRate>27.850</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 3</rateTitle>
+							<rateRate>27.260</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 4</rateTitle>
+							<rateRate>27.140</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+					</rateList>
+					<occupationGroupQualifier/>
+				</occupation>
+				<occupation>
+					<occupationTitle>Laborers:</occupationTitle>
+					<occupationQualifier>WRECKING</occupationQualifier>
+					<rateList>
+						<rate>
+							<rateTitle>GROUP 1</rateTitle>
+							<rateRate>27.390</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 2</rateTitle>
+							<rateRate>27.240</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+					</rateList>
+					<occupationGroupQualifier/>
+				</occupation>
+				<occupation>
+					<occupationTitle>Laborers:</occupationTitle>
+					<occupationQualifier>CONSTRUCTION CRAFT LABORERS</occupationQualifier>
+					<rateList>
+						<rate>
+							<rateTitle>Construction Specialist Group</rateTitle>
+							<rateRate>28.090</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 1</rateTitle>
+							<rateRate>27.390</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 1-a</rateTitle>
+							<rateRate>27.610</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 1-c</rateTitle>
+							<rateRate>27.440</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 1-e</rateTitle>
+							<rateRate>27.940</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 1-f</rateTitle>
+							<rateRate>27.970</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 2</rateTitle>
+							<rateRate>27.240</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 3</rateTitle>
+							<rateRate>27.140</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>GROUP 4</rateTitle>
+							<rateRate>20.830</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+					</rateList>
+					<occupationGroupQualifier>See groups 1-b and 1-d under laborer classifications</occupationGroupQualifier>
+				</occupation>
+				<occupation>
+					<occupationTitle>Landscape Laborer</occupationTitle>
+					<occupationQualifier>Gardeners, Horticultural &amp; Landscape Laborers</occupationQualifier>
+					<rateList>
+						<rate>
+							<rateTitle>Establishment Warranty Period</rateTitle>
+							<rateRate>20.830</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+						<rate>
+							<rateTitle>New Construction</rateTitle>
+							<rateRate>27.140</rateRate>
+							<rateFringe>18.66</rateFringe>
+						</rate>
+					</rateList>
+					<occupationGroupQualifier/>
+				</occupation>
+			</occupationList>
+			<wageGroupQualifier>FOOTNOTES:
+Laborers working off or with or from bos'n chairs, swinging scaffolds, belts (not applicable to workers entitled to receive the wage rate set forth in Group 1-a): $0.25 per hour additional.
+
+LABORER CLASSIFICATIONS
+
+CONSTRUCTION SPECIALIST GROUP: Asphalt ironer and raker; Chainsaw; Laser beam in connection with laborers' work; Masonry and plasterer tender; Cast-in-place manhole form setter; Pressure pipelayer; Davis trencher - 300 or similar type (and all small trenchers); Blaster; Diamond driller; Multiple unit drill; Hydraulic drill
+
+GROUP 1: Asphalt spreader boxes (all types); Barko, Wacker and similar type tampers; Buggymobile; Caulker, bander, pipewrapper, conduit layer, plastic pipelayer; Certified hazardous waste worker; Compactors of all types; Concrete and magnesite mixer, 1/2 yd. and under; Concrete pan work; Concrete sander; Concrete saw; Cribber and/or shoring; Cut granite curb setter; Dri-pak-it machine; Faller, logloader and bucker; Form raiser, slip forms; Green cutter; Headerboard, Hubsetter, aligner, by any method; High pressure blow pipe (1-1/2" or over, 100 lbs. pressure/over); Hydro seeder and similar ype; Jackhammer operator; Jacking of pipe over 12 inches; Jackson and similar type compactor; Kettle tender, pot and worker applying asphalt, lay-kold, creosote, lime, caustic and similar type materials (applying means applying, dipping or handling of such materials); Lagging, sheeting, whaling, bracing, trenchjacking, lagging hammer; Magnesite, epoxyresin, fiberglass, mastic worker (wet or dry); No joint pipe and stripping of same, including repair of voids; Pavement breaker and spader, including tool grinder; Perma curb; Pipelayer (including grade checking in connection with pipelaying); Precast-manhole setter; Pressure pipe tester; Post hole digger, air, gas and electric; Power broom sweeper; Power tampers of all types (except as shown in Group 2); Ram set gun and stud gun; Riprap stonepaver and rock-slinger, including placing of sacked concrete and/or sand (wet or dry) and gabions and similar type; Rotary scarifier or multiple head concrete chipping scarifier; Roto and Ditch Witch; Rototiller; Sandblaster, pot, gun, nozzle operators; Signalling and rigging; Tank cleaner; Tree climber; Turbo blaster; Vibrascreed, bull float in connection with laborers' work; Vibrator
+
+GROUP 1-a: Joy drill model TWM-2A; Gardner-Denver model DH143 and similar type drills; Track driller; Jack leg driller; Wagon driller; Mechanical drillers, all types regardless of type or method of power; Mechanical pipe layers, all types regardless of type or method of power; Blaster and powder; All work of loading, placing and blasting of all powder and explosives of whatever type regardless of method used for such loading and placing; High scalers (including drilling of same); Tree topper; Bit grinder
+
+GROUP 1-b: Sewer cleaners shall receive $4.00 per day above Group 1 wage rates.  "Sewer cleaner" means any worker who handles or comes in contact with raw sewage in small diameter sewers.  Those who work inside recently active, large diameter sewers, and all recently active sewer manholes, shall receive $5.00 per day above Group 1 wage rates.
+
+GROUP 1-c: Burning and welding in connection with laborers' work; Synthetic thermoplastics and similar type welding
+
+GROUP 1-d: Maintenance and repair track and road beds (underground structures). All employees performing work covered herein shall receive $ .25 per hour above their regular rate for all work performed on underground structures not specifically covered herein.  This paragraph shall not be construed to apply to work below ground level in open cut.  It shall apply to cut and cover work of subway construction after the temporary cover has been placed.
+
+GROUP 1-e: Work on and/or in bell hole footings and shafts thereof, and work on and in deep footings.  (A deep footing is a hole 15 feet or more in depth.)  In the event the depth of the footing is unknown at the commencement of excavation, and the final depth exceeds 15 feet, the deep footing wage rate would apply to all employees for each and every day worked on or in the excavation of the footing from the date of inception.
+
+GROUP 1-f: Wire winding machine in connection with guniting or shot crete
+
+GROUP 2: Asphalt shoveler; Cement dumper and handling dry cement or gypsum; Choke-setter and rigger (clearing work); Concrete bucket dumper and chute; Concrete chipping and grinding; Concrete laborer (wet or dry); Driller tender, chuck tender, nipper; Guinea chaser (stake), grout crew; High pressure nozzle, adductor; Hydraulic monitor (over 100 lbs. pressure); Loading and unloading, carrying and hauling of all rods and materials for use in reinforcing concrete construction; Pittsburgh chipper and similar type brush shredders; Sloper; Single foot, hand-held, pneumatic tamper; All pneumatic, air, gas and electric tools not listed in Groups 1 through 1-f; Jacking of pipe - under 12 inches
+
+GROUP 3: Construction laborers, including bridge and general laborer; Dump, load spotter; Flag person; Fire watcher; Fence erector; Guardrail erector; Gardener, horticultural and landscape laborer; Jetting; Limber, brush loader and piler; Pavement marker (button setter); Maintenance, repair track and road beds; Streetcar and railroad construction track laborer; Temporary air and water lines, Victaulic or similar; Tool room attendant (jobsite only)
+
+GROUP 4: All clean-up work of debris, grounds and building including but not limited to: street cleaner; cleaning and washing windows; brick cleaner (jobsite only); material cleaner (jobsite only). The classification "material cleaner" is to be utilized under the following conditions:
+A: at demolition site for the salvage of the material.
+B: at the conclusion of a job where the material is to be salvaged and stocked to be reused on another job.
+C: for the cleaning of salvage material at the jobsite or temporary jobsite yard.
+The material cleaner classification should not be used in the performance of "form stripping, cleaning and oiling and moving to the next point of erection".
+
+GUNITE LABORER CLASSIFICATIONS
+
+GROUP 1: Structural Nozzleman
+
+GROUP 2: Nozzleman, Gunman, Potman, Groundman
+
+GROUP 3: Reboundman
+
+GROUP 4: Gunite laborer
+
+WRECKING WORK LABORER CLASSIFICATIONS
+
+GROUP 1: Skilled wrecker (removing and salvaging of sash, windows and materials)
+
+GROUP 2: Semi-skilled wrecker (salvaging of other building materials)</wageGroupQualifier>
+			<wageGroupFooter/>
+		</wageGroup>
+^^^^^^^^^^^^^^^^^^^
  LABO0294-004 06/30/2014
 
                                   Rates          Fringes
