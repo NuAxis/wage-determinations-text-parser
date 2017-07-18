@@ -22,7 +22,7 @@ describe('Wage Determination Text Parser Module', function() {
    });
 
    it('should throw error on invalide file format or content', function(done) {
-     parser.parseWageDeterminationTextFile('./spec/fixture/wd-format/wage-determination2.text', function(error, wageDetermination) {
+     parser.parseWageDeterminationTextFile('./spec/fixture/wd-format/wd-invalid-format.text', function(error, wageDetermination) {
        expect(wageDetermination).to.not.be.jsonSchema(wdSchema);
        done();
      });
@@ -35,7 +35,7 @@ describe('Wage Determination Text Parser Module', function() {
       expect(wageDetermination).to.have.property('headerInformation');
       expect(wageDetermination).to.have.property('modifications');
       expect(wageDetermination).to.have.property('wageGroups');
-      //  console.log('Object: '+JSON.stringify(wageDetermination));
+      console.log('Object: '+JSON.stringify(wageDetermination));
       done();
     });
    });
@@ -64,12 +64,12 @@ describe('Wage Determination Text Parser Module', function() {
       });
      });
 
-    it('should throw error on providing non-text format', function(done) {
-      parser.parseWageDeterminationText(12345678, function(error, wageDetermination) {
-        expect(error).to.be.defined;
-        done();
-      });
-     });
+    // it('should throw error on providing non-text format', function(done) {
+    //   parser.parseWageDeterminationText(12345678, function(error, wageDetermination) {
+    //     expect(error).to.be.defined;
+    //     done();
+    //   });
+    //  });
 
    it('should throw error when given wrong filePath', function(done) {
       parser.parseWageDeterminationTextFile('./spec/fixture/wage-determination.textd', function(error, wageDetermination) {
