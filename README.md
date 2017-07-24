@@ -32,66 +32,50 @@ parser.parseWageDeterminationText(fileContent, function(error, wageDetermination
 
 # Wage Determination JSON Object Schema
 ``` json
-
 {
-  "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
     "properties": {
         "headerInformation": {
             "properties": {
                 "constructionTypes": {
-                    "description": "Names of constructions on which wage determination applied ",
                     "type": "string"
                 },
                 "counties": {
-                    "description": "Names of counties in which wage determination applicable",
                     "type": "string"
                 },
                 "state": {
-                    "description": "State in which wages are applied ",
                     "type": "string"
                 },
                 "wageDeterminationCode": {
-                    "description": "Defines code which is combination of effective year and State code",
-                    "pattern": "",
                     "type": "string"
                 }
             },
-            "required": [
-                "state",
-                "constructionTypes",
-                "counties",
-                "wageDeterminationCode"
-            ],
             "type": "object"
         },
         "modifications": {
             "items": {
-                "description": "List of modifications of the current wage determination. ",
                 "type": "string"
             },
             "type": "array"
         },
         "wageGroups": {
             "items": {
-                "additionalProperties": false,
                 "properties": {
                     "occupations": {
                         "items": {
                             "properties": {
                                 "fringe": {
-                                    "description": "Fringe of the occupation ",
                                     "type": "string"
                                 },
                                 "isGroup": {
-                                    "description": "Defines if the current occupation contains sub occupations ",
                                     "type": "boolean"
                                 },
                                 "rate": {
-                                    "description": "Rate of the occupation",
                                     "type": "string"
                                 },
                                 "title": {
-                                    "description": "Name of the occupation ",
                                     "type": "string"
                                 }
                             },
@@ -99,8 +83,7 @@ parser.parseWageDeterminationText(fileContent, function(error, wageDetermination
                         },
                         "type": "array"
                     },
-                    "wageGroupCode": {
-                        "description": "Unique wage group which is combination of effective date of the wage.",
+                    "wageGroupQualifier": {
                         "type": "string"
                     }
                 },
@@ -109,11 +92,7 @@ parser.parseWageDeterminationText(fileContent, function(error, wageDetermination
             "type": "array"
         }
     },
-    "required": [
-        "modifications",
-        "headerInformation"
-    ]
-
+    "type": "object"
 }
 
 ```
@@ -121,53 +100,68 @@ parser.parseWageDeterminationText(fileContent, function(error, wageDetermination
 ``` json
 {
 	"headerInformation": {
-		"wageDeterminationCode": "VA160003 12/23/2016",
-		"counties": "Pittsylvania County in Virginia.",
-		"constructionTypes": "Building",
-		"state": "Virginia"
+		"wageDeterminationCode": " CA20170032 07/07/2017",
+		"counties": " Tulare County in California.",
+		"constructionTypes": " Heavy (Heavy and Dredging) and Highway",
+		"state": " California"
 	},
 	"modifications": [
-		"12/23/2016"
+		"01/06/2017",
+		"01/27/2017",
+		"03/03/2017"
 	],
 	"wageGroups": [
 		{
-			"wageGroupCode": " ASBE0024-006 10/01/2016",
+			"wageGroupQualifier": "\n",
 			"occupations": [
 				{
-					"title": "  ASBESTOS WORKER/HEAT & FROST INSULATOR - MECHANICAL (Duct, Pipe & Mechanical System Insulation)",
-					"rate": "35.03",
-					"fringe": "15.32",
+					"title": "Asbestos Removal\nworker/hazardous material\nhandler (Includes\npreparation, wetting,\nstripping, removal,\nscrapping, vacuuming, bagging\nand disposing of all\ninsulation materials from\nmechanical systems, whether\nthey contain asbestos or not)",
+					"rate": "28.20",
+					"fringe": "8.95",
 					"isGroup": false
 				}
 			]
 		},
 		{
-			"wageGroupCode": "ELEC0666-001 03/01/2016",
+			"wageGroupQualifier": "\n\nDEPTH PAY (Surface Diving):\n050 to 100 ft    $2.00 per foot\n101 to 150 ft    $3.00 per foot\n151 to 220 ft    $4.00 per foot\n\nSATURATION DIVING:\n  The standby rate shall apply until saturation starts.  The\n  saturation diving rate applies when divers are under\n  pressure continuously until work task and decompression are\n  complete. The diver rate shall be paid for all saturation\n  hours.\n\nDIVING IN ENCLOSURES:\n  Where it is necessary for Divers to enter pipes or tunnels,\n  or other enclosures where there is no vertical ascent, the\n  following premium shall be paid:  Distance traveled from\n  entrance 26 feet to 300 feet:  $1.00 per foot.  When it is\n  necessary for a diver to enter any pipe, tunnel or other\n  enclosure less than 48\" in height, the premium will be\n  $1.00 per foot.\n\nWORK IN COMBINATION OF CLASSIFICATIONS:\n  Employees working in any combination of classifications\n  within the diving crew (except dive supervisor) in a shift\n  are paid in the classification with the highest rate for\n  that shift.\n\n",
 			"occupations": [
 				{
-					"title": "  ELECTRICIAN",
-					"rate": "29.53",
-					"fringe": "43%",
-					"isGroup": false
-				}
-			]
-		},
-		{
-			"wageGroupCode": "ENGI0147-015 06/01/2015",
-			"occupations": [
-				{
-					"title": "\n\nPOWER EQUIPMENT OPERATOR\n",
+					"title": "Diver\n",
 					"rates": [
 						{
-							"title": "Bulldozer",
-							"rate": "27.73",
-							"fringe": "14.29",
+							"title": "Assistant Tender, ROV\nTender/Technician",
+							"rate": "43.65",
+							"fringe": "31.40",
 							"isGroup": false
 						},
 						{
-							"title": "Electrican",
-							"rate": "27.73",
-							"fringe": "14.29",
+							"title": "Diver standby",
+							"rate": "48.61",
+							"fringe": "31.40",
+							"isGroup": false
+						},
+						{
+							"title": "Diver Tender",
+							"rate": "47.82",
+							"fringe": "31.40",
+							"isGroup": false
+						},
+						{
+							"title": "Diver wet",
+							"rate": "93.17",
+							"fringe": "31.40",
+							"isGroup": false
+						},
+						{
+							"title": "Manifold Operator (mixed\ngas)",
+							"rate": "52.82",
+							"fringe": "31.40",
+							"isGroup": false
+						},
+						{
+							"title": "Manifold Operator (Standby)",
+							"rate": "47.82",
+							"fringe": "31.40",
 							"isGroup": false
 						}
 					],
@@ -176,36 +170,84 @@ parser.parseWageDeterminationText(fileContent, function(error, wageDetermination
 			]
 		},
 		{
-			"wageGroupCode": "PLUM0540-008 05/01/2016",
+			"wageGroupQualifier": "\n",
 			"occupations": [
 				{
-					"title": "  PIPEFITTER (Includes HVAC Unit Installation)",
-					"rate": "26.75",
-					"fringe": "15.38",
+					"title": "Piledriver",
+					"rate": "44.65",
+					"fringe": "31.40",
 					"isGroup": false
 				}
 			]
 		},
 		{
-			"wageGroupCode": "SUVA2013-013 01/11/2016",
+			"wageGroupQualifier": "\n\nAREA DESCRIPTIONS\n\n  AREA 1: ALAMEDA,BUTTE, CONTRA COSTA, KINGS, MARIN, MERCED,\n  NAPA, SACRAMENTO, SAN BENITO, SAN FRANCISCO, SAN JOAQUIN,\n  SAN MATEO, SANTA CLARA, SANTA CRUZ, SOLANO, STANISLAUS,\n  SUTTER, YOLO, AND YUBA COUNTIES\n\nAREA 2:  MODOC COUNTY\n\n  THE REMAINGING COUNTIES ARE SPLIT BETWEEN AREA 1 AND AREA 2\n  AS NOTED BELOW:\n\nALPINE COUNTY:\nArea 1:  Northernmost part\nArea 2:  Remainder\n\nCALAVERAS COUNTY:\nArea 1: Remainder\nArea 2: Eastern part\n\nCOLUSA COUNTY:\nArea 1:  Eastern part\nArea 2:  Remainder\n\nELDORADO COUNTY:\nArea 1:  North Central part\nArea 2:  Remainder\n\nFRESNO COUNTY:\nArea 1: Remainder\nArea 2: Eastern part\n\nGLENN COUNTY:\nArea 1:  Eastern part\nArea 2: Remainder\n\nLASSEN COUNTY:\n  Area 1:  Western part along the Southern portion of border\n  with Shasta County\nArea 2:  Remainder\n\nMADERA COUNTY:\nArea 1: Except Eastern part\nArea 2: Eastern part\n\nMARIPOSA COUNTY\nArea 1: Except Eastern part\nArea 2: Eastern part\n\nMONTERREY COUNTY\nArea 1: Except Southwestern part\nArea 2: Southwestern part\n\nNEVADA COUNTY:\n  Area 1:  All but the Northern portion along the border of\n  Sierra County\nArea 2:  Remainder\n\nPLACER COUNTY:\nArea 1:  Al but the Central portion\nArea 2:  Remainder\n\nPLUMAS COUNTY:\nArea 1:  Western portion\nArea 2:  Remainder\n\nSHASTA COUNTY:\nArea 1:  All but the Northeastern corner\nArea 2:  Remainder\n\nSIERRA COUNTY:\nArea 1:  Western part\nArea 2:  Remainder\n\nSISKIYOU COUNTY:\nArea 1:  Central part\nArea 2:  Remainder\n\nSONOMA COUNTY:\nArea 1:  All but the Northwestern corner\nArea 2:  Remainder\n\nTEHAMA COUNTY:\n  Area 1:  All but the Western border with Mendocino &amp; Trinity\n  Counties\nArea 2:  Remainder\n\nTRINITY COUNTY:\n  Area 1:  East Central part and the Northeastern border with\n  Shasta County\nArea 2:  Remainder\n\nTUOLUMNE COUNTY:\nArea 1: Except Eastern part\nArea 2: Eastern part\n\n",
 			"occupations": [
 				{
-					"title": "  CARPENTER",
-					"rate": "15.60",
-					"fringe": "0.00",
-					"isGroup": false
-				},
-				{
-					"title": " LABORER:  Common or General",
-					"rate": "12.30",
-					"fringe": "1.40",
-					"isGroup": false
-				},
-				{
-					"title": " TRUCK DRIVER:  Dump Truck",
-					"rate": "11.25",
-					"fringe": "0.57",
-					"isGroup": false
+					"title": "Dredging: (DREDGING:\nCLAMSHELL &amp; DIPPER DREDGING;\nHYDRAULIC SUCTION DREDGING:)\n",
+					"rates": [
+						{
+							"title": "AREA 1:\n",
+							"rates": [
+								{
+									"title": "(1) Leverman",
+									"rate": "44.77",
+									"fringe": "31.25",
+									"isGroup": false
+								},
+								{
+									"title": "(2) Dredge Dozer; Heavy\nduty repairman",
+									"rate": "39.81",
+									"fringe": "31.25",
+									"isGroup": false
+								},
+								{
+									"title": "(3) Booster Pump\nOperator; Deck\nEngineer; Deck mate;\nDredge Tender; Winch\nOperator",
+									"rate": "38.69",
+									"fringe": "31.25",
+									"isGroup": false
+								},
+								{
+									"title": "(4) Bargeman; Deckhand;\nFireman; Leveehand; Oiler",
+									"rate": "35.39",
+									"fringe": "31.25",
+									"isGroup": false
+								}
+							],
+							"isGroup": true
+						},
+						{
+							"title": "AREA 2:\n",
+							"rates": [
+								{
+									"title": "(1) Leverman",
+									"rate": "46.77",
+									"fringe": "31.25",
+									"isGroup": false
+								},
+								{
+									"title": "(2) Dredge Dozer; Heavy\nduty repairman",
+									"rate": "41.81",
+									"fringe": "31.25",
+									"isGroup": false
+								},
+								{
+									"title": "(3) Booster Pump\nOperator; Deck\nEngineer; Deck mate;\nDredge Tender; Winch\nOperator",
+									"rate": "40.69",
+									"fringe": "31.25",
+									"isGroup": false
+								},
+								{
+									"title": "(4) Bargeman; Deckhand;\nFireman; Leveehand; Oiler",
+									"rate": "37.39",
+									"fringe": "31.25",
+									"isGroup": false
+								}
+							],
+							"isGroup": true
+						}
+					],
+					"isGroup": true
 				}
 			]
 		}

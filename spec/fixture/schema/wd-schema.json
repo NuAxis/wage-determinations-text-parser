@@ -32,42 +32,14 @@
                     "occupations": {
                         "items": {
                             "properties": {
+                                "fringe": {
+                                    "type": "string"
+                                },
                                 "isGroup": {
                                     "type": "boolean"
                                 },
-                                "rates": {
-                                    "items": {
-                                        "properties": {
-                                            "isGroup": {
-                                                "type": "boolean"
-                                            },
-                                            "rates": {
-                                                "items": {
-                                                    "properties": {
-                                                        "fringe": {
-                                                            "type": "string"
-                                                        },
-                                                        "isGroup": {
-                                                            "type": "boolean"
-                                                        },
-                                                        "rate": {
-                                                            "type": "string"
-                                                        },
-                                                        "title": {
-                                                            "type": "string"
-                                                        }
-                                                    },
-                                                    "type": "object"
-                                                },
-                                                "type": "array"
-                                            },
-                                            "title": {
-                                                "type": "string"
-                                            }
-                                        },
-                                        "type": "object"
-                                    },
-                                    "type": "array"
+                                "rate": {
+                                    "type": "string"
                                 },
                                 "title": {
                                     "type": "string"
