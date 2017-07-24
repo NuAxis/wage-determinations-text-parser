@@ -52,6 +52,18 @@ describe('Wage Determination Text Parser Module', function() {
       });
     });
 
+    it('should get wage determination object', function(done) {
+      parser.parseWageDeterminationTextFile('./spec/fixture/wd-format/wage-determination-format.text', function(error, wageDetermination) {
+        // console.log('Object: '+JSON.stringify(wageDetermination));
+        expect(error).to.be.undefined;
+        expect(wageDetermination).to.be.defined;
+        expect(wageDetermination).to.have.property('headerInformation');
+        expect(wageDetermination).to.have.property('modifications');
+        expect(wageDetermination).to.have.property('wageGroups');
+        done();
+      });
+     });
+
     it('should get wage determination object from format0', function(done) {
       parser.parseWageDeterminationTextFile('./spec/fixture/wd-format/wage-determination0.text', function(error, wageDetermination) {
         // console.log('Object: '+JSON.stringify(wageDetermination));
