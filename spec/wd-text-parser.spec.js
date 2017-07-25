@@ -96,7 +96,7 @@ describe('Wage Determination Text Parser Module', function() {
         expect(wageDetermination).to.have.property('headerInformation');
         expect(wageDetermination).to.have.property('modifications');
         expect(wageDetermination).to.have.property('wageGroups');
-        // console.log('Object: '+JSON.stringify(wageDetermination));
+        console.log('Object: '+JSON.stringify(wageDetermination));
         done();
       });
      });
